@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ANSAZZ is a back-office BPO">
+  <title>ANSAZZ Global Services</title>
+  
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Sticky navigation -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="brand" aria-label="ANSAZZ Solicitors home">
+        <span>
+          <strong>ANSAZZ</strong>
+          <small>Global Services PVT LTD</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#services">Services</a></li>
+        <li class="nav-dropdown">
+          <a href="#about" class="nav-dropdown__trigger">About <span aria-hidden="true">▾</span></a>
+          <ul class="nav-dropdown__menu" aria-label="About submenu">
+            <li><a href="mission.html">Our Mission</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <a href="quality-assurance.html" class="nav-dropdown__trigger">Quality & Compliance <span aria-hidden="true">▾</span></a>
+          <ul class="nav-dropdown__menu" aria-label="Quality and compliance submenu">
+            <li><a href="quality-assurance.html">Quality Assurance</a></li>
+            <li><a href="data-security.html">Data Security</a></li>
+          </ul>
+        </li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#maps">Maps</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero section-reveal" id="home">
+      <div class="hero__background" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <p class="eyebrow slide-up">UK-based legal excellence</p>
+        <h1 class="slide-up">Trusted legal support with precision and excellence.</h1>
+        <p class="hero__intro slide-up">
+          ANSAZZ Global Services PVT LTD delivers clear, strategic, and discreet legal support for the UK Law Firms.
+        </p>
+        <div class="hero__actions slide-up">
+          <a href="#contact" class="button button--gold ripple-button">Start Your Enquiry</a>
+          <a href="#services" class="button button--glass ripple-button">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust indicators -->
+    <section class="stats section-reveal" aria-label="Firm highlights">
+      <div class="container stats__grid">
+        <article>
+          <span class="counter" data-target="20">0</span>
+          <p>Years Industry Experience</p>
+        </article>
+        <article>
+          <span class="counter" data-target="98-99">0</span>
+          <p>Accuracy Target</p>
+        </article>
+        <article>
+          <span class="counter" data-target="500">0</span>
+          <p> Conveyancing Files Monthly</p>
+        </article>
+        <article>
+          <span class="counter" data-target="3500">0</span>
+          <p>Transcription Files Monthly</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-reveal" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="eyebrow">Ansazz At A Glance</h2>
+          <h4>What Sets Us Apart.</h4>
+          <p>Numbers that reflect our commitment to precision, reliability, and exceptional client service.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="service-card">
+            <span class="card-icon">01</span>
+            <h3>9+</h3>
+            <p>Supporting UK Legal Clients Since 2017.</p>
+          </article>
+          <article class="service-card">
+            <span class="card-icon">02</span>
+            <h3>20+</h3>
+            <p>Years Industry Experience</p>
+          </article>
+          <article class="service-card">
+            <span class="card-icon">03</span>
+            <h3>15</h3>
+            <p>Legal Process Professionals</p>
+          </article>
+          <article class="service-card">
+            <span class="card-icon">04</span>
+            <h3>500+</h3>
+            <p> Conveyancing Files Monthly</p>
+          </article>
+          <article class="service-card">
+            <span class="card-icon">05</span>
+            <h3>3,500+</h3>
+            <p>Transcription Files Monthly</p>
+          </article>
+          <article class="service-card">
+            <span class="card-icon">06</span>
+            <h3>98–99%</h3>
+            <p>Accuracy Target</p>
+          </article>
+          <article class="service-card">
+            <span class="card-icon">07</span>
+            <h3>UK Shift</h3>
+            <p>Coverage</p>
+          </article>
+          <article class="service-card">
+            <span class="card-icon">08</span>
+            <h3>Proclaim & ShareFile</h3>
+            <p>Platform Expertise</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about section-reveal" id="about">
+      <div class="container split about__split">
+        <div class="about-visual" aria-hidden="true">
+          <div class="about-visual__frame">
+            <svg class="about-visual__svg" viewBox="0 0 320 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="aboutVisualTitle">
+              <title id="aboutVisualTitle">Back-office workflow: case files, transcription, quality review and secure delivery to UK solicitors</title>
+
+              <!-- connecting flow line -->
+              <line x1="58" y1="94" x2="58" y2="308" stroke="rgba(217,176,97,0.45)" stroke-width="2" stroke-dasharray="1 8" stroke-linecap="round"/>
+
+              <!-- Node 1: Case files & instructions -->
+              <g transform="translate(58,64)">
+                <circle r="28" fill="#ffffff" stroke="#D9B061" stroke-width="1.6"/>
+                <g stroke="#171717" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M-12 -6h7l3 3h14v13h-24z"/>
+                </g>
+              </g>
+              <text x="102" y="60" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717">Transcription Files</text>
+              <text x="102" y="76" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#68635d">Accurate transcription of legal audio and documents.</text>
+
+              <!-- Node 2: Transcription & processing -->
+              <g transform="translate(58,154)">
+                <circle r="28" fill="#ffffff" stroke="#D9B061" stroke-width="1.6"/>
+                <g stroke="#171717" stroke-width="1.5" fill="none" stroke-linecap="round">
+                  <path d="M-11 4v-2M-6 6v-6M-1 8v-10M4 6v-6M9 4v-2"/>
+                </g>
+              </g>
+              <text x="102" y="150" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717">Processing</text>
+              <text x="102" y="166" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#68635d">Transcription &amp; documentation</text>
+
+              <!-- Node 3: Quality review -->
+              <g transform="translate(58,244)">
+                <circle r="28" fill="#ffffff" stroke="#D9B061" stroke-width="1.6"/>
+                <g stroke="#171717" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="-3" cy="-3" r="7"/>
+                  <path d="M2 2l7 7"/>
+                  <path d="M-6 -3l2 2 4-4"/>
+                </g>
+              </g>
+              <text x="102" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717">QA Review</text>
+              <text x="102" y="256" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#68635d">Accuracy &amp; compliance checks</text>
+
+              <!-- Node 4: Secure delivery -->
+              <g transform="translate(58,334)">
+                <circle r="28" fill="#D9B061" stroke="#D9B061" stroke-width="1.6"/>
+                <g stroke="#171717" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M0 -11l10 4v7c0 6-4 10-10 13-6-3-10-7-10-13v-7z"/>
+                  <path d="M-4 0l3 3 6-6"/>
+                </g>
+              </g>
+              <text x="102" y="330" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717">Confidential & Secure</text>
+              <text x="102" y="346" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#68635d">Strict confidentiality for every case.</text>
+            </svg>
+          </div>
+
+          <div class="about-visual__badge">
+            <strong>2017</strong>
+            <span>Serving UK law firms since</span>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow">About ANSAZZ</p>
+          <h2 class="about-copy__heading">Delivering Legal Process Excellence</h2>
+          <p class="about-copy__text">
+            Ansazz provides specialist legal process support services to UK law firms. 
+            Our team assists with conveyancing workflows, legal transcription, 
+            document review, and quality assurance activities. Delivering precise, reliable 
+            and scalable legal support that drives efficiency and service excellence.
+          </p>
+          <ul class="check-list">
+            <!-- key benefits from old website -->
+            <li>Specialist Conveyancing Support Services</li>
+            <li>Legal Transcription Expertise</li>
+            <li>Structured QA Framework</li>
+            <li>Secure & Confidential Operations</li>
+            <li>Flexible Support Model</li>
+            <li>UK Shift Coverage</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="section section-reveal" id="why-us">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why clients choose us</p>
+          <h2>Precision, reliability, and results you can trust.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>Conveyancing Support</h3>
+            <p>Administrative and workflow support for residential and commercial conveyancing matters.</p>
+            <button class="discover-link" type="button" data-service-target="conveyancing">Discover more</button>
+          </article>
+          <article class="feature">
+            <h3>Legal Transcription Services</h3>
+            <p>Accurate transcription of legal recordings, meetings and dictations for law firms.</p>
+            <button class="discover-link" type="button" data-service-target="transcription">Discover more</button>
+          </article>
+          <article class="feature">
+            <h3>Quality Assurance & Review</h3>
+            <p>Independent quality review services for legal support processes and documentation.</p>
+            <button class="discover-link" type="button" data-service-target="qa-review">Discover more</button>
+          </article>
+        </div>
+
+        <div class="service-detail-panel" id="serviceDetailPanel" aria-live="polite">
+          <article class="service-detail is-active" id="conveyancing" data-service-detail>
+            <p class="eyebrow">Conveyancing Support Services</p>
+            <h3>Our Conveyancing Support Services</h3>
+            <div class="detail-grid">
+              <div>
+                <h4><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9.5 13h5M9.5 16.5h5"/></svg></span>Pre-Completion Support</h4>
+                <ul>
+                  <li>File opening and matter setup</li>
+                  <li>AML/KYC administration</li>
+                  <li>Identity verification administration</li>
+                  <li>Client care pack preparation</li>
+                </ul>
+              </div>
+              <div>
+                <h4><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="16" rx="1.5"/><path d="M9 3.5h6v2H9z"/><path d="M9 10h6M9 13.5h6M9 17h4"/></svg></span>Conveyancing Administration Support</h4>
+                <ul>
+                  <li>Mortgage report preparation support</li>
+                  <li>Land Registry administration support</li>
+                  <li>Document review and verification</li>
+                  <li>Administrative workflow support</li>
+                </ul>
+              </div>
+              <div>
+                <h4><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></svg></span>Conveyancing Audio Transcription</h4>
+                <ul>
+                  <li>Digital dictation transcription</li>
+                  <li>Attendance notes transcription</li>
+                  <li>Conveyancing-related correspondence transcription</li>
+                  <li>Legal document transcription</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-detail" id="transcription" data-service-detail>
+            <p class="eyebrow">Legal Transcription</p>
+            <h3>Legal Transcription Solutions for UK Law Firms</h3>
+            <div class="detail-grid">
+              <div>
+                <h4><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></svg></span>Dictation Transcription</h4>
+                <ul>
+                  <li>Solicitor and fee earner dictations</li>
+                  <li>Legal correspondence</li>
+                  <li>Client communications</li>
+                  <li>Notes and memoranda</li>
+                  <li>Matter-related documentation</li>
+                </ul>
+              </div>
+              <div>
+                <h4><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3.5 20c.5-3.5 3-5.5 5.5-5.5s5 2 5.5 5.5"/><path d="M15 14.5c2 .2 3.6 1.8 4 5.5"/></svg></span>Interview and Meeting Transcription</h4>
+                <ul>
+                  <li>Client interviews</li>
+                  <li>Witness interviews</li>
+                  <li>Internal meetings</li>
+                  <li>Consultation recordings</li>
+                  <li>Case discussions</li>
+                </ul>
+              </div>
+              <div>
+                <h4><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9.5 13h5M9.5 16.5h5"/></svg></span>Legal Documentation Support</h4>
+                <ul>
+                  <li>Statements and reports</li>
+                  <li>Legal notes</li>
+                  <li>Correspondence preparation</li>
+                  <li>Document formatting</li>
+                  <li>File organisation support</li>
+                </ul>
+              </div>
+            </div>
+            <div class="choice-strip">
+              <h4>Why Law Firms Choose Ansazz</h4>
+              <p>Accurate transcription processes, confidential handling of legal information, dedicated quality assurance reviews, flexible support models, reliable turnaround times, scalable support during peak workloads, and experience supporting legal professionals and legal support teams with familiarity in legal terminology.</p>
+            </div>
+          </article>
+
+          <article class="service-detail" id="qa-review" data-service-detail>
+            <p class="eyebrow">Quality Assurance & Review</p>
+            <h3>Our Quality Assurance & Review</h3>
+            <div class="detail-grid detail-grid--four">
+              <div>
+                <h4><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9.5 13h5M9.5 16.5h5"/></svg></span>Document Review Support</h4>
+                <ul>
+                  <li>Legal document review</li>
+                  <li>Formatting and consistency checks</li>
+                  <li>Data verification</li>
+                  <li>Template compliance checks</li>
+                  <li>Document completeness review</li>
+                </ul>
+              </div>
+              <div>
+                <h4><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16"/><rect x="7" y="12" width="2.4" height="7"/><rect x="12" y="9" width="2.4" height="10"/><rect x="17" y="6" width="2.4" height="13"/></svg></span>Workflow Quality Monitoring</h4>
+                <ul>
+                  <li>Process compliance reviews</li>
+                  <li>Workflow audits</li>
+                  <li>Error trend analysis</li>
+                  <li>Quality score tracking</li>
+                  <li>Performance monitoring</li>
+                </ul>
+              </div>
+              <div>
+                <h4><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1-4 12-12 3 3-12 12z"/><path d="M13 6l3 3"/></svg></span>Transcription Quality Assurance</h4>
+                <ul>
+                  <li>Transcript review and verification</li>
+                  <li>Accuracy checks</li>
+                  <li>Formatting reviews</li>
+                  <li>Consistency validation</li>
+                  <li>Client specification compliance</li>
+                </ul>
+              </div>
+              <div>
+                <h4><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a1.5 1.5 0 0 1 1.5-1.5h4l2 2h9A1.5 1.5 0 0 1 21 9v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18z"/></svg></span>Conveyancing Quality Review</h4>
+                <ul>
+                  <li>File review support</li>
+                  <li>Workflow compliance checks</li>
+                  <li>Documentation verification</li>
+                  <li>Administrative quality checks</li>
+                  <li>Process adherence monitoring</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parallax callout -->
+    <section class="parallax section-reveal" aria-label="Consultation callout">
+      <div class="container parallax__content">
+        <p class="eyebrow">Measured. Precise. Secure.</p>
+        <h2>Empowering legal professionals with seamless support.</h2>
+        <a href="#contact" class="button button--gold ripple-button">Request a Call Back</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact section-reveal" id="contact">
+      <div class="container split split--contact">
+        <div>
+          <p class="eyebrow">Contact us</p>
+          <h2>Speak to ANSAZZ Global Services.</h2>
+          <p>
+            Tell us a little about your matter and our team will respond promptly.
+            For urgent issues, call our office directly.
+          </p>
+          <div class="contact-details">
+            <p style="font-family: 'Times New Roman';"><strong>Phone:</strong> +91 9845480796</p>
+            <p><strong>Email:</strong> info@ansazz.com </p>
+            <p><strong>Office:</strong> Mysore (Udayagiri)</p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            Law Firm / Company
+            <input type="text" name="law_firm" placeholder="Your law firm" required>
+          </label>
+          <label>
+            Email address
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Phone Number
+            <input type="tel" name="phone" placeholder="" required>
+          </label>
+          <label class="contact-form__full">
+            Practice area
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option>Conveyancing support</option>
+              <option>Legal Transcription</option>
+              <option>Quality Assurance and Review</option>
+              <option>General Enquiry</option>
+            </select>
+          </label>
+          <label class="contact-form__full">
+            Brief Your Requirements
+            <textarea name="message" rows="5" placeholder="Briefly tell us how we can help" required></textarea>
+          </label>
+          <button type="submit" class="button button--gold ripple-button contact-form__full">Send Enquiry</button>
+          <p class="form-message contact-form__full" id="formMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Maps -->
+    <section class="section maps section-reveal" id="maps">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Maps</p>
+          <h2>Find ANSAZZ  on Google Maps.</h2>
+          <p>Use the map below to view our listed location and plan your visit.</p>
+        </div>
+
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.85839933029!2d76.67118477409252!3d12.32531622871996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf705ad19d351d%3A0x8cad9507ad6e49f5!2sAnsazz!5e0!3m2!1sen!2sin!4v1783275677081!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="ANSAZZ Solicitors location on Google Maps"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> ANSAZZ. All rights reserved.</p>
+      <div>
+        <a href="#home">Privacy</a>
+        <a href="#home">Terms</a>
+        <a href="#contact">Contact</a>
+        <a href="#maps">Maps</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
